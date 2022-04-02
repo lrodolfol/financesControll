@@ -1,0 +1,81 @@
+/*VARIAVEIS DE COR*/
+:root {
+    --dark-blue: #363f5f;
+    --blue: #0000CD;
+    --light-blue: #0000FF;
+    --red: #e92929;
+    --black: #000;
+    --green: #4CAF50;
+    --tema: #607D8B;
+    --fundo: #f0f2f5
+}
+
+/*GLOBAIS*/
+* { /*DA UM RESETADA NO DOCUMENTO*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.9;
+    color: var(--tema);
+}
+
+.sr-only { /*UMA FORMA DE SUMIR COM OS TITULO VISIVELMENTE. PARA OS LEITORES DE SITE ELE AINDA ESTA LA */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: react(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.blockqoute{
+    border-color: var(--tema);
+}
+
+.top{
+    text-align: center;
+    margin: 0 0 5rem 0;
+}
+
+footer{
+    margin: 5rem 0 0 0;
+    text-align: center;
+}
+
+/*FORMS MESSAGES */
+.error {
+    color: var(--red);
+}
+.success {
+    color: var(--green);
+}
+
+/*LOGIN*/
+.lagel-forget {
+    color: var(--black);
+}
+
+/*CREATE ACCOUNT*/
+.create-account {
+    border-radius: 0.5rem;
+}
+
+/*DASHBOARD*/
+.balance {
+    text-align: center;
+}

@@ -1,0 +1,66 @@
+<%- include('../layouts/header', {title}) %>
+
+    <main class="animate-up delay-2">
+        <section class="top">
+            <h4>Ok, let's create a new debit</h4>
+            <h6>it's normal.. =)</h6>
+        </section>
+
+        <div class="container">
+            <section id="form">
+                <div class="row">
+                    <form method="post" action="/debit" class="col s12" name="formDebit" data-formdebit>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="description" id="debitDescription" name="description" type="text"
+                                    class="validate" data-debitDescription>
+                                <label for="debitDescription">Description</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input id="debitAmount" type="number" step="0.01" class="validate" name="amount"
+                                    data-debitAmount>
+                                <label for="debitAmount">Amount</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input id="debitDate" type="date" name="date" class="validate" data-debitDate>
+                                <label for="debitDate">Date</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="comments" id="comments" name="comments" type="text"
+                                    class="validate">
+                                <label for="comments">Comments</label>
+                            </div>
+                        </div>
+                        <p>
+                            <label>
+                                <input type="checkbox" checked="checked" />
+                                <span>is this operation active?</span>
+                            </label>
+                        </p>
+
+                        <div class="row"></div>
+
+                        <div class="message-submit sr-only" data-message-submit>
+                        </div>
+
+
+                        <button class="btn waves-effect blue-grey" type="submit" name="action" data-debitSubmit>Submit
+                            <i class="material-icons right"></i>
+                        </button>
+                </div>
+                </form>
+        </div>
+        </section>
+        </div>
+
+    </main>
+
+
+    <%- include('../layouts/footer', {author}) %>
+        <script type="module" src="/js/debit.js"></script>
+
+        </body>
+
+        </html>

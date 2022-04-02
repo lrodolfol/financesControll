@@ -1,0 +1,31 @@
+{
+     "author": {
+        "name": "Rodolfo J.Silva",
+        "email": "rodolfo@gmail.com",
+        "url": "http://tinosnegocios.com.br",
+        "git": "https://github.com/lrodolfol",
+        "link": "https://https://www.linkedin.com/in/rodolfoj-silva/"
+    },
+
+    "setup": {
+        "port": 8080
+    },
+     
+    "mysql_test": {
+        "database": "finances",
+        "host": "127.0.0.1",
+        "username": "root",
+        "password": "sinqia123",
+        "dialect": "mysql",
+        "port": 3306
+    },
+
+    "mysql_prod": {
+        "database": "",
+        "host": "127.0.0.1",
+        "username": "",
+        "password": "",
+        "dialect": ""
+    }
+    
+}

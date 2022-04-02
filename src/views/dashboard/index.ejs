@@ -1,0 +1,23 @@
+<%- include('../layouts/header', {title}) %>
+
+  <main>
+    <div class="container">
+      <section class="top">
+        <h1>Welcome, <%= user %>
+        </h1>
+        <h4>what is your main focus for today? =)</h4>
+      </section>
+
+      <section class="balance">
+        <h3>Your balance today: R$ <%= data.amount %> </h3>
+        <h3>Your Yield today: R$ <%= `${data.yield}%` %>  </h3>
+      </section>
+    </div>
+  </main>
+
+
+  <%- include('../layouts/footer', {author}) %>
+
+    </body>
+
+    </html>

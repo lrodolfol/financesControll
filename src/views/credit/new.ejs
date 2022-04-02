@@ -1,0 +1,66 @@
+<%- include('../layouts/header', {title}) %>
+
+    <main class="animate-up delay-2">
+        <section class="top">
+            <h4>Ok, let's create a new credit</h4>
+            <h6>it sounds good.. =)</h6>
+        </section>
+
+        <div class="container">
+            <section id="form">
+                <div class="row">
+                    <form method="post" action="/credit" class="col s12" name="formCredit" data-formCredit>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="description" id="creditDescription" name="description" type="text"
+                                    class="validate" data-creditDescription>
+                                <label for="creditDescription">Description</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input id="creditAmount" type="number" step="0.01" class="validate" name="amount"
+                                    data-creditAmount>
+                                <label for="creditAmount">Amount</label>
+                            </div>
+                            <div class="input-field col s3">
+                                <input id="creditDate" type="date" name="date" class="validate" data-creditDate>
+                                <label for="creditDate">Date</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input placeholder="comments" id="comments" name="comments" type="text"
+                                    class="validate">
+                                <label for="comments">Comments</label>
+                            </div>
+                        </div>
+                        <p>
+                            <label>
+                                <input type="checkbox" checked="checked" />
+                                <span>is this operation active?</span>
+                            </label>
+                        </p>
+
+                        <div class="row"></div>
+
+                        <div class="message-submit sr-only" data-message-submit>
+                        </div>
+
+
+                        <button class="btn waves-effect blue-grey" type="submit" name="action" data-creditSubmit>Submit
+                            <i class="material-icons right"></i>
+                        </button>
+                </div>
+                </form>
+        </div>
+        </section>
+        </div>
+
+    </main>
+
+
+    <%- include('../layouts/footer', {author}) %>
+        <script type="module" src="/js/credit.js"></script>
+
+        </body>
+
+        </html>

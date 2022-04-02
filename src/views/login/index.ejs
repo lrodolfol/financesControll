@@ -1,0 +1,67 @@
+<link href="/materialize/css/materialize.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="/css/style.css">
+<script src="/materialize/css/materialize.min.css"></script>
+<script src="/js/jquery-1.11.1.min.js"></script>
+
+<div class="container">
+    <div class="row">
+        <div class="section"></div>
+        <main>
+            <center>
+                <div class="container">
+                    <div class="z-depth-3 y-depth-3 x-depth-3 grey green-text lighten-4 row"
+                        style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px; margin-top: 100px; solid #EEE;">
+                        <div class="section"></div>
+                        <div class="section"></div>
+
+                        <form action="/login" method="post" id="form-login" data-formLogin>
+                            <div class="section"><i class="mdi-alert-error red-text"></i></div>
+
+                            <div class='row'>
+                                <div class='input-field col s12'>
+                                    <input class='validate' type="text" name='username' id='username' data-username
+                                         />
+                                    <label for='email'>Username</label>
+                                </div>
+                            </div>
+                            <div class='row'>
+                                <div class='input-field col m12'>
+                                    <input class='validate' type='password' name='password' id='password' data-password
+                                         />
+                                    <label for='password'>Password</label>
+                                </div>
+                                <label style='float: right;'>
+                                    <a href="#"><b class="lagel-forget">Forgot Password?</b></a>
+                                </label>
+                            </div>
+
+                            <div class="message-submit error" data-message-submit>
+                                    <%= msg.error %> 
+                            </div>
+
+                            <br />
+                            <center>
+                                <div class='row'>
+                                    <div class='input-field col m12'>
+                                        <button style="margin-left:65px;" type='submit' class='col  s6 btn btn-small white black-text  waves-effect z-depth-1 y-depth-1'>Logar</button>
+                                    </div>
+                                    
+                                </div>
+                            </center>
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+                <a href="/account/create-account">Create account</a>
+            </center>
+        </main>
+        
+
+        <%- include('../layouts/footer', {author}) %>
+
+
+        <script type="module" src="/js/login.js"></script>
+
+    </div>
+</div>

@@ -1,0 +1,65 @@
+<%- include('../layouts/header-no-auth', {title}) %>
+
+    <section class="top">
+        <h4>Woww! This is a especial day</h4>
+        <h6>it's good to have you with us =)</h6>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s3"></div>
+            <form action="/account/create-account" method="post" class="col s6 white z-depth-5 form create-account"
+                data-formCreateAccount>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Your name" id="username" type="text" class="validate" name="username"
+                            data-username>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" placeholder="Email address" class="validate" name="email"
+                            data-email>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="create a new password" id="password" type="text" class="validate"
+                            name="password" data-password>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="repeat password" id="repassword" type="text" class="validate"
+                            name="repassword" data-repassword>
+                    </div>
+                </div>
+                <p>
+                    <label>
+                        <input type="checkbox" name="terms" data-terms />
+                        <span>I accept the terms</span>
+                    </label>
+                </p>
+
+                <center style="margin: 1rem">
+                    <div class="message-submit sr-only" data-message-submit>
+                    </div>
+                    
+                    <br />
+
+                    <button class="btn waves-effect waves-light center" type="submit">Register
+
+                    </button>
+                </center>
+            </form>
+            <div class="col s3"></div>
+        </div>
+    </div>
+
+    <%- include('../layouts/footer', {author}) %>
+
+        </body>
+
+        <script type="module" src="/js/create-account.js"></script>
+
+        </html>
