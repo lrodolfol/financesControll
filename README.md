@@ -17,3 +17,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Project
 
 Basic system finances controll. Made to test tools and start big project 💰
+
+## Start with:
+npm run dev
