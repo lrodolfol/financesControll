@@ -1,1 +1,1 @@
-{ "dataBaseNameUse": "finances_rodolfo" }
+{ "dataBaseNameUse": "finances_" }
